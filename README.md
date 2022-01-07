@@ -1,5 +1,7 @@
 # "Mining old manuals" (MOM) corpus
 
+The pdfs retrieved from Gallica and Google Books (corpus_pdf) were OCRed using the tesseract library (corpus_txt)
+
 - **Guide pratique du jardinier français - Traité complet d’horticulture** par P. Desmoulins 1881 *(495 p.)*
 - **L’école du jardin potager** par M. de Combles 1802 *(587 p.)*
 - **Le potager moderne** par Gressent 1863 *(499 p.)*
@@ -11,7 +13,7 @@
 
 # Requirements
 
-You need to install wordcloud, pandas, plotly if you want to visualize wordclouds and embeddings
+You need to install wordcloud, pandas, plotly if you want to generate and visualize wordclouds and embeddings
 
 # Wordclouds
 
@@ -19,11 +21,11 @@ We show the wordcloud of the 300 most significant words with the size of the wor
 
 ![MOM_freq_verbs_sorted_tfidf](figs/MOM_freq_verbs_sorted_tfidf.png?raw=true "300 most significant words with the size of the word related its number of occurences in the corpus. The signifiance is [#occurences in the MOM corpus]/[#occurences in the Frantext corpus]")
 
-# Embedding
+# Semantic map
 
 We used a Word2Vec embedding built on the french wikipedia. The embeddings are projected on 2D using UMAP. 
 
-To visualize the map:
+To visualize the map interactively:
 '''python
 python3 word2vec.py
 '''
