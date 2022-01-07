@@ -1,6 +1,6 @@
 # "Mining old manuals" (MOM) corpus
 
-The pdfs retrieved from Gallica and Google Books (corpus_pdf) were OCRed using the tesseract library (corpus_txt)
+The pdfs retrieved from Gallica and Google Books (corpus_pdf) were processed (OCR) using the tesseract library (corpus_txt)
 
 - **Guide pratique du jardinier français - Traité complet d’horticulture** par P. Desmoulins 1881 *(495 p.)*
 - **L’école du jardin potager** par M. de Combles 1802 *(587 p.)*
