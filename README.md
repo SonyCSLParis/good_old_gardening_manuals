@@ -10,11 +10,13 @@ You need to install wordcloud, pandas, plotly if you want to visualize wordcloud
 
 We show 2 wordclouds:
 
+- 300 most frequent words with the size of the word related its number of occurences in the corpus.
+
 ![MOM_freq_verbs_sorted_freqs](figs/MOM_freq_verbs_sorted_freqs.png?raw=true "300 most frequent words with the size of the word related its number of occurences in the corpus.")
 
-![MOM_freq_verbs_sorted_tfidf](figs/MOM_verbs_freqs_sorted_tfidf.png?raw=true "300 most significant words with the size of the word related its number of occurences in the corpus. The signifiance is [#occurences in the MOM corpus]/[#occurences in the Frantext corpus]")
+- 300 most significant words with the size of the word related its number of occurences in the corpus. The signifiance is [#occurences in the MOM corpus]/[#occurences in the Frantext corpus]
 
-- MOM_verbs_freqs_sorted_tfidf: We show the 300 most significant words with the size of the word related its number of occurences in the corpus. The signifiance is [#occurences in the MOM corpus]/[#occurences in the Frantext corpus]
+![MOM_freq_verbs_sorted_tfidf](figs/MOM_verbs_freqs_sorted_tfidf.png?raw=true "300 most significant words with the size of the word related its number of occurences in the corpus. The signifiance is [#occurences in the MOM corpus]/[#occurences in the Frantext corpus]")
 
 # Embedding
 
