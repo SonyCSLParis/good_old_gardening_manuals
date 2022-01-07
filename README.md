@@ -16,7 +16,7 @@ We show 2 wordclouds:
 
 - 300 most significant words with the size of the word related its number of occurences in the corpus. The signifiance is [#occurences in the MOM corpus]/[#occurences in the Frantext corpus]
 
-![MOM_freq_verbs_sorted_tfidf](figs/MOM_verbs_freqs_sorted_tfidf.png?raw=true "300 most significant words with the size of the word related its number of occurences in the corpus. The signifiance is [#occurences in the MOM corpus]/[#occurences in the Frantext corpus]")
+![MOM_freq_verbs_sorted_tfidf](figs/MOM_freq_verbs_sorted_tfidf.png?raw=true "300 most significant words with the size of the word related its number of occurences in the corpus. The signifiance is [#occurences in the MOM corpus]/[#occurences in the Frantext corpus]")
 
 # Embedding
 
