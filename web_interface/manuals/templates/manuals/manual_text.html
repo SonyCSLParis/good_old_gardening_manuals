@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Manuals - {{ manual.title }}</title>
+    
+    {% load static %}
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'manuals/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'manuals/css/manual.css' %}">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav">
+            <a href="{% url 'manuals:index' %}" class="nav-item nav-link active">Manuals</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+          </div>
+        </div>
+        
+      </div>
+    </nav>
+    
+    <div class="container-fluid">
+      <div class="manual">
+
+        <div class="row">
+          <div class="col-md-7">
+            <div class="manual-title-section">
+              <h1 class="manual-title">{{ manual.title }}</h1>
+              <p class="manual-info">
+                <span class="manual-authors">{{ manual.authors }}</span>
+                <span class="manual-year">({{ manual.year }})</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-5">
+          </div>
+        </div>
+
+        <div class="row">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Text</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'manuals:manual_annotations' manual.pk %}">Annotations</a>
+            </li>
+          </ul>
+        </div>
+        
+        {% load mptt_tags %}
+        {% load get_class %}
+        
+        {% full_tree_for_model manuals.TextNode as nodes %}
+        {% recursetree nodes %}
+        {% with node.content_object|get_class as type %}
+        
+        {% if type == 'Section' %}
+        <div class="row">
+          <div class="col-md-7">
+            <div class="manual-section">
+              <p class="manual-section-title manual-title-level-{{ node.content_object.level }}">{{ node.content_object.title }}</p>
+            </div>
+          </div>
+          <div class="col-md-5">
+          </div>
+        </div>
+        {{ children }}
+        {% endif %}
+        
+        {% if type == 'Paragraph' %}
+        {% with node.content_object.section as section %}
+        {% with node.content_object.paragraph as paragraph %}
+        <div class="row manual-paragraph">
+          <div class="col-md-7">
+            {{ children }}
+          </div>
+          <div class="col-md-5">
+          <div class="manual-paragraph-annotations" id="paragraph-{{ section }}-{{ paragraph }}">
+          </div>
+          </div>
+        </div>
+        {% endwith %}
+        {% endwith %}
+        {% endif %}
+        
+        {% if type == 'Sentence' %}
+        {% with node.content_object.section as section %}
+        {% with node.content_object.paragraph as paragraph %}
+        {% with node.content_object.index as sentence %}
+        <a class="manual-sentence-link" onclick="javascript:toggleAnnotations('{{ section }}', '{{ paragraph }}', '{{ sentence }}', '{% url 'manuals:annotations_json' node.content_object.manual section paragraph sentence %}')"> 
+            <span class="manual-sentence" id="sentence-{{ section }}-{{ paragraph }}-{{ sentence }}">{{ node.content_object.text }}</span>
+        </a>
+        {% endwith %}
+        {% endwith %}
+        {% endwith %}
+        {% endif %}
+        
+        {% endwith %}
+        {% endrecursetree %}
+
+      </div>
+    </div> <!-- container -->
+    
+    <script src="{% static 'manuals/js/jquery.min.js' %}"></script>
+    <script src="{% static 'manuals/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'manuals/js/manual.js' %}"></script>
+
+    <script>
+      $(function() { initManual('{{ manual.label }}'); });
+    </script>
+    
+  </body>
+</html>

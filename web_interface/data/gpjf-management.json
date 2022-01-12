@@ -1,0 +1,51 @@
+[
+    {
+        "index": [ "gpjf", "1.1", "11", "1" ],
+        "crop": "laitues romaines",
+        "topic": "cultivation",
+        "description": "Les romaines se cultivent à peu près comme les laitues rondes",
+        "steps": [
+            {
+                "topic": "sowing",
+                "description": "On élève le plant de la Romaine maraîchère sous cloche ou sous châssis, pour forcer ou pour transplanter à l’air libre, afin de pouvoir la livrer à la consommation dès le premier printemps"
+            },
+            {
+                "topic": "planting-out",
+                "dates": ["december", "february", "march", "april"],
+                "description": "Le plant se repique, sur lignes, en échiquier à environ 0,04m de distance; on le risque en partie à l'air libre de février en avril, quelquefois même, dès la fin de décembre."
+            },
+            {
+                "topic": "maintenance"
+                "description": "Prendre garde à la gelée, aux coups de soleil."
+            }
+        ]
+    },
+    {
+        "index": [ "gpjf", "1.1", "11", "4" ],
+        "crop": "laitues romaines",
+        "topic": "forced-cultivation",
+        "description": "Pour la culture forcée sur une grande échelle aux environs de Paris",
+        "steps": [
+            {
+                "topic": "sowing",
+                "description": "Vous sèmerez la graine des Laitues précoces sous cloche, sur platebande terreautée, au midi, accordant à votre plant le moins d’air possible (culture à l’étouffée)"
+            },
+            {
+                "topic": "planting-out",
+                "description": "Vous repiquerez sous d’autres cloches (à raison de cinq individus par cloche)."
+            },
+            {
+                "topic": "planting-out",
+                "description": "Puis vous repiquerez sur couches, ne laissant entre la surface de votre couche et le vitrage que l’espace nécessaire, car vos Laitues ne doivent pas devenir grosses. Il leur faut donc peu de place."
+            },
+            {
+                "topic": "maintenance"
+                "description": "Vous entretiendrez une chaleur modérée, mais constante, par les réchauds de fumier, ou mieux, par le thermosiphon."
+            },
+            {
+                "topic": "maintenance"
+                "description": "Vous aurez soin d’essuyer la vapeur condensée sur les parois intérieures de vos châssis. La buée qui retombe à froid sur les feuilles y fait des taches."
+            }
+        ]
+    }
+]

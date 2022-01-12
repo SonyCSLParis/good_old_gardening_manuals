@@ -1,0 +1,193 @@
+
+body {
+    background-color: white;
+    font: 1.1em "Fira Sans", serif;
+    line-height: 1.6em;
+}
+
+/* Modify the background color */
+.navbar-custom {
+    background-color: white;
+    border-bottom: solid 1px grey; 
+}
+
+/* Modify brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: black;
+}
+
+.navbar-nav .nav-link {
+    color: black;
+    text-decoration: none;
+}
+
+.manuals {
+    margin-top: 40px;
+    margin-left: 20px;
+    border-right: solid 1px grey;
+}
+
+.manuals-title {
+    color: black;
+    text-decoration: none;
+    font-size: 150%;
+}
+
+.manual {
+    margin-left: 20px;
+    border-right: solid 1px grey;
+}
+
+h1.manual-title {
+    padding: 20px 0px 9px 0px;
+}
+
+.manual-title-section {
+    margin-bottom: 40px; 
+    border-bottom: solid 0px grey; 
+}
+
+.manual-paragraph {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+a.manual-sentence-link {
+    color: black;
+    text-decoration: none;
+}
+
+a.manual-sentence-link:hover {
+    background-color: yellow;
+}
+
+.manual-sentence {
+    border-bottom: solid 2px white;
+}
+
+.manual-paragraph-annotations {
+    padding-bottom: 10px;
+    font-family: sans-serif;
+    line-height: 1.6em;
+}
+
+.manual-sentence-annotations {
+    border-left: solid 2px blue;
+    padding-left: 20px;
+}
+
+.manual-sentence-annotation {
+    font-family: sans-serif;
+}
+
+.manual-sentence-signature {
+    font-style: italic;
+    font-size: 70%;
+    color: grey;
+}
+
+.manual-sentence-annotation {
+}
+
+.manual-annotation-type {
+    font-size: 70%;
+    color: blue;
+}
+
+.manual-annotation-evaluation {
+    font-size: 60%;
+    color: #202020;
+}
+
+.annotation-subject {
+    /*font-weight: bold;*/
+    display: inline;
+    color: blue;
+}
+
+.annotation-text {    
+    display: inline;
+}
+
+.ontology-name {
+    /*font-weight: bold;*/
+    display: inline;
+    color: blue;
+}
+
+.ontology-description {
+    display: inline;
+    font-style: italic;
+}
+
+.ontology-child-name {
+}
+
+.ontology-child-description {
+    font-style: italic;
+    padding-left: 12px; 
+}
+
+.manual-title-level-0 {
+    font-size: 32px;
+    padding: 20px 0px 6px 0px;
+}
+
+.manual-title-level-1 {
+    font-size: 24px;
+    padding: 9px 0px 6px 0px;
+}
+
+.manual-title-level-2 {
+    font-size: 18px;
+    padding: 9px 0px 6px 0px;
+}
+
+.manual-title-level-3 {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 0px 6px 0px;
+}
+
+.manual-title-level-4 {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 0px 6px 20px;
+}
+
+.manual-border-color-1 {
+    border-color: blue;
+}
+
+.manual-border-color-2 {
+    border-color: orange;
+}
+
+.manual-border-color-3 {
+    border-color: green;
+}
+
+.manual-border-color-4 {
+    border-color: red;
+}
+
+.manual-border-color-5 {
+    border-color: lightgreen;
+}
+
+.manual-border-color-6 {
+    border-color: brown;
+}
+
+.manual-border-color-7 {
+    border-color: purple;
+}
+
+.manual-border-color-8 {
+    border-color: fuchsia;
+}
+
+.manual-border-color-9 {
+    border-color: navy;
+}

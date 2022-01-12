@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Manuals</title>
+  </head>
+  <body>
+    {% if annotation_list %}
+    {% for annotation in annotation_list %}
+    <div>
+      <div>
+        {{ annotation.type }}
+      </div>
+      <div>
+        {{ annotation.text }}
+      </div>
+    </div>
+    {% endfor %}
+    {% else %}
+    <p>No annotations.</p>
+    {% endif %}
+      </body>
+</html>

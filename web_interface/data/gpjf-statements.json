@@ -1,0 +1,218 @@
+[
+    {
+        "type": "Statement",
+        "index": [ "gpjf", "1.1", "2", "1" ],
+        "subject": "Laitues",
+        "text": "En général les laitues montent vite."
+    },
+    {
+        "type": "Statement",
+        "index": [ "gpjf", "1.1", "2", "1" ],
+        "subject": "Laitues",
+        "text": "Les laitues prennent difficilement dans les terrains trop légers."
+    },
+    {
+        "type": "Statement",
+        "index": [ "gpjf", "1.1", "2", "1" ],
+        "subject": "Laitues",
+        "text": "Les laitues prennent difficilement dans les terrains trop chauds."
+    },
+    {
+        "type": "Statement",
+        "index": [ "gpjf", "1.1", "2", "1" ],
+        "subject": "Laitues",
+        "text": "Les laitues prennent difficilement dans les terrains trop secs."
+    },
+    {
+        "type": "Statement",
+        "index": [ "gpjf", "1.1", "2", "1" ],
+        "subject": "Laitues",
+        "text": "Les Laitues poussent avec une extrême lenteur dans les terrains forts et froids."
+    },
+    {
+        "type": "Statement",
+        "index": [ "gpjf", "1.1", "3", "1" ],
+        "subject": "Laitue gotte",
+        "text": "Les Laitues gottes sont trop promptes à monter avant d’avoir formé leur pomme ou presque immédiatement après."
+    },
+    {
+        "type": "Statement",
+        "index": [ "gpjf", "1.1", "3", "1" ],
+        "subject": "Laitue gotte",
+        "text": "Les Laitues gottes sont très précoce."
+    },
+    {
+        "type": "Advice",
+        "index": [ "gpjf", "1.1", "3", "2" ],
+        "subject": "Laitue gotte à cordon rouge",
+        "text": "Laitue gotte à cordon rouge se force sur couche ou se cultive en pleine terre sur côtière, au midi, dès les premiers jours de printemps."
+    },
+    {
+        "type": "Opinion",
+        "index": [ "gpjf", "1.1", "3", "3" ],
+        "subject": "Laitue gotte dauphine",
+        "text": "Laitue gotte, variété dite dauphine, nous fournit la meilleure des laitues de printemps."
+    },
+    {
+        "type": "Statement",
+        "index": [ "gpjf", "1.1", "4", "2" ],
+        "subject": "Laitue chou",
+        "text": "La laitue chou offre des pommes aussi grosses que celles de nos choux pommés les plus forts."
+    },
+    {
+        "type": "Opinion",
+        "index": [ "gpjf", "1.1", "4", "2" ],
+        "subject": "Laitue chou",
+        "text": "La saveur de la laitue chou n’est pas très agréable."
+    },
+    {
+        "type": "Advice",
+        "index": [ "gpjf", "1.1", "4", "3" ],
+        "subject": "Laitue blonde paresseuse",
+        "text": "Dans les terrains médiocres, vous planterez la blonde paresseuse et la rousse de Hollande car elles sont très rustiques."
+    },
+    {
+        "type": "Advice",
+        "index": [ "gpjf", "1.1", "4", "3" ],
+        "subject": "Laitue rousse de Hollande",
+        "text": "Dans les terrains médiocres, vous planterez la blonde paresseuse et la rousse de Hollande car elles sont très rustiques."
+    },
+    {
+        "type": "Advice",
+        "index": [ "gpjf", "1.1", "4", "3" ],
+        "subject": "Laitue blonde paresseuse",
+        "text": "La blonde paresseuse et la rousse de Hollande réussissant d’elles mêmes quand on les abandonne à leur végétation naturelle."
+    },
+    {
+        "type": "Advice",
+        "index": [ "gpjf", "1.1", "4", "3" ],
+        "subject": "Laitue rousse de Hollande",
+        "text": "La blonde paresseuse et la rousse de Hollande réussissant d’elles mêmes quand on les abandonne à leur végétation naturelle."
+    },
+    {
+        "type": "Advice",
+        "index": [ "gpjf", "1.1", "4", "3" ],
+        "subject": "Laitue rousse de Hollande",
+        "text": "La blonde paresseuse et la rousse de Hollande réussissant d’elles mêmes quand on les abandonne à leur végétation naturelle."
+    },
+    {
+        "type": "Opinion",
+        "index": [ "gpjf", "1.1", "5", "1" ],
+        "subject": "Laitue de la Passion",
+        "text": "Elle est peu délicate de goût."
+    },
+    {
+        "type": "Opinion",
+        "index": [ "gpjf", "1.1", "5", "1" ],
+        "subject": "La morine",
+        "text": "Elle est peu délicate de goût."
+    },
+    {
+        "type": "Opinion",
+        "index": [ "gpjf", "1.1", "5", "1" ],
+        "subject": "La petite crêpe",
+        "text": "Elle est peu délicate de goût."
+    },
+    {
+        "type": "Opinion",
+        "index": [ "gpjf", "1.1", "5", "1" ],
+        "subject": "Laitue noire",
+        "text": "Elle est peu délicate de goût."
+    },
+    {
+        "type": "Statement",
+        "index": [ "gpjf", "1.1", "5", "1" ],
+        "subject": "Laitue de la Passion",
+        "text": "Elle est capable de passer l'hiver en pleine terre si vous la plantez à bonne exposition."
+    },
+    {
+        "type": "Statement",
+        "index": [ "gpjf", "1.1", "5", "1" ],
+        "subject": "La morine",
+        "text": "Elle est capable de passer l'hiver en pleine terre si vous la plantez à bonne exposition."
+    },
+    {
+        "type": "Statement",
+        "index": [ "gpjf", "1.1", "5", "1" ],
+        "subject": "La petite crêpe",
+        "text": "Elle est capable de passer l'hiver en pleine terre si vous la plantez à bonne exposition."
+    },
+    {
+        "type": "Statement",
+        "index": [ "gpjf", "1.1", "5", "1" ],
+        "subject": "Laitue noire",
+        "text": "Elle est capable de passer l'hiver en pleine terre si vous la plantez à bonne exposition."
+    },
+    {
+        "type": "Statement",
+        "index": [ "gpjf", "1.1", "5", "1" ],
+        "subject": "Laitue de la Passion",
+        "text": "Elle pousse dès le premier printemps."
+    },
+    {
+        "type": "Statement",
+        "index": [ "gpjf", "1.1", "5", "1" ],
+        "subject": "La morine",
+        "text": "Elle pousse dès le premier printemps."
+    },
+    {
+        "type": "Statement",
+        "index": [ "gpjf", "1.1", "5", "1" ],
+        "subject": "La petite crêpe",
+        "text": "Elle pousse dès le premier printemps."
+    },
+    {
+        "type": "Statement",
+        "index": [ "gpjf", "1.1", "5", "1" ],
+        "subject": "Laitue noire",
+        "text": "Elle pousse dès le premier printemps."
+    },
+    {
+        "type": "Advice",
+        "index": [ "gpjf", "1.1", "5", "2" ],
+        "subject": "Laitue de la Passion",
+        "text": "Elle convient spécialement pour la culture forcée."
+    },
+    {
+        "type": "Advice",
+        "index": [ "gpjf", "1.1", "5", "2" ],
+        "subject": "La morine",
+        "text": "Elle convient spécialement pour la culture forcée."
+    },
+    {
+        "type": "Advice",
+        "index": [ "gpjf", "1.1", "5", "2" ],
+        "subject": "La petite crêpe",
+        "text": "Elle convient spécialement pour la culture forcée."
+    },
+    {
+        "type": "Advice",
+        "index": [ "gpjf", "1.1", "5", "2" ],
+        "subject": "Laitue noire",
+        "text": "Elle convient spécialement pour la culture forcée."
+    },
+    {
+        "type": "Definition",
+        "index": [ "gpjf", "1.1", "5", "3" ],
+        "subject": "Laitues à couper",
+        "text": "Les maraîchers nomment 'laitues à couper', non pas des espèces particulières, mais des plants de Laitues crêpes ou de Laitues gottes, semés très épais : ils les coupent au collet de la racine dès que paraît la quatrième feuille et les livrent à la consommation. la Laitue chicorée et la Laitue épinard ont cette destination particulière."
+    },
+    {
+        "type": "Advice",
+        "index": [ "gpjf", "1.1", "5", "3" ],
+        "subject": "Laitue chicorée",
+        "text": "La laitue chicorée et la Laitue épinard sont particulière bien comme laitues à couper."
+    },
+    {
+        "type": "Advice",
+        "index": [ "gpjf", "1.1", "5", "3" ],
+        "subject": "Laitue épinard",
+        "text": "La laitue chicorée et la Laitue épinard sont particulière bien comme laitues à couper."
+    },
+    {
+        "type": "Definition",
+        "index": [ "gpjf", "1.1", "11", "4" ],
+        "subject": "Culture à l’étouffée",
+        "text": "Semer sous cloche, accordant au plant le moins d’air possible."
+    }
+]

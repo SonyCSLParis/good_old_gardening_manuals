@@ -1,0 +1,69 @@
+[
+    {
+        "index": [ "gpjf", "1", "1", "1" ],
+        "name": "Salade",
+        "children": [
+            {
+                "name": "Laitue de printemps"
+            },
+            {
+                "name": "Laitue d’été"
+            },
+            {
+                "name": "Laitue d’hiver"
+            },
+            {
+                "name": "Laitue romaines"
+            },
+            {
+                "name": "Chicorée"
+            },
+            {
+                "name": "Scarole"
+            },
+            {
+                "name": "Chicorée sauvage"
+            },
+            {
+                "name": "Chicorée barbe-de-capucin"
+            },
+            {
+                "name": "Mâche"
+            },
+            {
+                "name": "Raiponce"
+            }
+        ]
+    },
+    {
+        "index": [ "gpjf", "1.1", "1", "1" ],
+        "name": "Laitue",
+        "description": "Toutes les nombreuses variétés de laitues produites par la culture",
+        "children": [
+            {
+                "name": "Laitue pommée"
+            },
+            {
+                "name": ["Laitue romaine", "Chicon"]
+            }
+        ]
+    },
+    {
+        "index": [ "gpjf", "1.1", "1", "2" ],
+        "name": "Laitue pommée",
+        "children": [
+            {
+                "name": "Laitue de printemps",
+                "description": "Les laitues de printemps sont les plus précoces de toutes."
+            },
+            {
+                "name": "Laitue d'été",
+                "description": "Les Laitues d'été sont les plus volumineuses et les moins sujettes à monter."
+            },
+            {
+                "name": "Laitue d'hiver",
+                "description": "Les laitues d'hiver sont celles qu’on traite comme plantes bisannuelles à partir de l’automne pour être mangées au printemps de l’année suivante."
+            }
+        ]
+    }
+]

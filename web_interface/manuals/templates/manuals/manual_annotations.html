@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Manuals - {{ manual.title }}</title>
+    
+    {% load static %}
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'manuals/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'manuals/css/manual.css' %}">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav">
+            <a href="{% url 'manuals:index' %}" class="nav-item nav-link active">Manuals</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+          </div>
+        </div>
+        
+      </div>
+    </nav>
+    
+    <div class="container-fluid">
+      <div class="manual">
+
+        <div class="row">
+          <div class="col-md-7">
+            <div class="manual-title-section">
+              <h1 class="manual-title">{{ manual.title }}</h1>
+              <p class="manual-info">
+                <span class="manual-authors">{{ manual.authors }}</span>
+                <span class="manual-year">({{ manual.year }})</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-5">
+          </div>
+        </div>
+        
+        <div class="row mb-4">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'manuals:manual_text' manual.pk %}">Text</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Annotations</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <div class="col-md-7">
+            <div class="manual-annotation-list" id="manual-annotation-list">
+            </div>
+          </div>
+          <div class="col-md-5">
+          </div>
+        </div>
+      </div>
+    </div> <!-- container -->
+    
+    <script src="{% static 'manuals/js/jquery.min.js' %}"></script>
+    <script src="{% static 'manuals/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'manuals/js/manual.js' %}"></script>
+
+    <script>
+      $(function() {
+          initManual('{{ manual.label }}');
+          loadAllAnnotation("{% url 'manuals:annotations_json_all' manual.label %}");
+      });
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Manuals - {{ manual.title }}</title>
+    
+    {% load static %}
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'manuals/css/bootstrap.min.css %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'manuals/css/manual.css' %}">
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+            <img src="assets/images/romi_logo_icon.svg" height="54" alt="ROMI">
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav">
+            <a href="index.html" class="nav-item nav-link active">Manuals</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+          </div>
+        </div>
+        
+      </div>
+    </nav>
+
+    
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-md-6">
+        
+          <div class="manual-title-section">
+            <h1 class="manual-title">{{ manual.title }}</h1>
+            <p class="manual-info">
+              <span class="manual-authors">{{ manual.authors }}</span>
+              <span class="manual-year">({{ manual.year }})</span>
+            </p>
+          </div>
+
+          {% load mptt_tags %}
+          {% load class_tag %}
+          
+          {% full_tree_for_model manuals.TextNode as nodes %}
+          {% recursetree nodes %}
+          {% with node.content_object|get_class as type %}
+          
+          {% if type == 'Section' %}
+          <div class="manual-section">
+            <p class="manual-section-title">{{ node.content_object.title }}</p>
+            {{ children }}
+          </div>
+          {% endif %}
+          
+          {% if type == 'Paragraph' %}
+          <p class="manual-paragraph">
+            {{ children }}
+          </p>
+          {% endif %}
+          
+          {% if type == 'Sentence' %}
+          <span class="manual-sentence">
+            {{ node.content_object.text }}
+          </span>
+          {% endif %}
+          
+          {% endwith %}
+          {% endrecursetree %}
+
+        </div>
+        <div class="col-md-6">
+
+        </div> <!-- col-?-6 -->
+      </div> <!-- row -->
+    </div> <!-- container -->
+    
+    <script src="{% static 'manuals/js/jquery.min.js' %}"></script>
+    <script src="{% static 'manuals/js/bootstrap.min.js' %}"></script>
+    
+  </body>
+</html>
